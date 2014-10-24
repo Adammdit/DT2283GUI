@@ -4,20 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class SplashScreen extends Activity 
 {
 	// Splash screen timer
-	private static int SPLASH_TIME_OUT = 29000;
+	private static int SPLASH_TIME_OUT = 3000;
 	   
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash_screen);
-		
+		setContentView(R.layout.activity_splash_screen);		
 		// Reference: The following code is from 
 		// http://www.androidhive.info/2013/07/how-to-implement-android-splash-screen-2/
 		new Handler().postDelayed(new Runnable() 
@@ -32,7 +29,7 @@ public class SplashScreen extends Activity
             {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
+                Intent i = new Intent(SplashScreen.this, DetailsForm.class);
                 startActivity(i);
  
                 // close this activity
