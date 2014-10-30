@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+/home/adamm/GitRepos/DT2283GUI/.metadata/.plugins/org.eclipse.jdt.core
+4155572885.index
+2742872995.index
+1414412096.index
+62699815.index

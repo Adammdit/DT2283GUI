@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">List</string>
+    <string name="hello_world">HELLO!!!</string>
+    
+    <string-array name="melee">
+        <item>Knife</item>
+        <item>Machete</item>
+        <item>Maltador</item>
+        <item>Galstead</item>
+        <item>Throwing knife</item>
+        <item>Ubuntu</item>
+        <item>Windows7</item>
+        <item>Max OS X</item>
+        <item>Linux</item>
+        <item>OS/2</item>
+    </string-array>
+</resources>

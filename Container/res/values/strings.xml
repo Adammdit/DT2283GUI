@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Container</string>
+    <string name="hello_world">Add task</string> 
+	<string name="button1_text">Add task</string> 
+	<string name="button2_text">Cancel</string>
+	<string name="edit_text_default">Get Milk</string> 
+	<string name="edit_text_hint">Hintk</string>
+	
+</resources>

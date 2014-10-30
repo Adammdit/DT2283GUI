@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlashLight</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="green_title">Green</string>
+    <string name="red_title">Red</string>
+    <string name="title_activity_green_flashlight">GreenFlashlightActivity</string>
+
+</resources>
