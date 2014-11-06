@@ -43,16 +43,7 @@ public class CustomAdapter extends ArrayAdapter<String>
 		System.out.println(s);
  
 		if (s.equals("Knife")) {
-			imageView.setImageResource(R.drawable.knife);
-		} else if (s.equals("Machete")) {
-			imageView.setImageResource(R.drawable.machete);
-		} else if (s.equals("Maltador")) {
-			imageView.setImageResource(R.drawable.maltador);
-			
-		} else if (s.equals("Galstead")) {
-			imageView.setImageResource(R.drawable.galstead);
-		} else {
-			imageView.setImageResource(R.drawable.throwing);
+			imageView.setImageResource(R.drawable.acp5);
 		}
  
 		return rowView;

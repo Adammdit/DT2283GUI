@@ -1,0 +1,58 @@
+package ie.dit.miedziejewski.adam;
+
+import android.app.Activity;
+import android.hardware.Camera.Size;
+import android.os.Bundle;
+import android.util.SparseArray;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity 
+{
+	String[] gunName, gunDescription;
+	Float[] gunPrice;
+	// more efficient than HashMap for mapping integers to objects
+	SparseArray<Group> groups = new SparseArray<Group>();
+	ImageView image;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		gunName = getResources().getStringArray(R.array.handguns);
+		
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
+		
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);
+	}
+
+	public void createData() 
+	{	
+		Group handguns = new Group("Handguns");
+		
+		for(int i=0; i<gunName.length; i++)
+		{
+			Item e = new Item(gunName[i], 512.76f, 0);
+			handguns.children.add(e);
+		}
+		
+		
+		/*handguns.gunName.add("ACP 5");
+		handguns.gunName.add("ATI");
+		handguns.gunName.add("Charter");
+		handguns.gunName.add("Pantera");
+		handguns.gunName.add("SPL 38");
+		handguns.gunName.add("Taurus");
+		*/
+
+		Group assault = new Group("Assault");
+	 
+		groups.append(0, handguns);
+		groups.append(1, assault);
+	}
+
+}

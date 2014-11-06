@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/khaki"
-    android:orientation="horizontal" >
-
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:background="@color/khaki"
+   android:padding="8dp">
+    <LinearLayout android:id="@+id/Text"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingLeft="10dip">
+        <TextView
+         android:id="@+id/weekofday"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
+         android:textSize="16dip"
+         android:textStyle="italic"
+         />
+        <TextView
+         android:id="@+id/price"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
+         android:textSize="16dip"
+         android:textStyle="italic"
+         />
+        
+    </LinearLayout>
     <ImageView
         android:id="@+id/weaponeImage"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:padding="10dp"
-        android:src="@drawable/knife" />
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true" />
 
-    <TextView
-        android:id="@+id/weekofday"
-        android:layout_width="wrap_content"
-        android:textSize="30sp"
-        android:padding="10dp"
-        android:layout_height="60dp" />
     
-    <EditText android:id="@+id/ItemCaption"
-		android:layout_height="wrap_content" android:layout_width="80dp"
-		android:layout_marginLeft="2dip" android:singleLine="true" />
+
+        <requestFocus />
 
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number" />
+    
+</RelativeLayout >

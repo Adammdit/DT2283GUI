@@ -1,0 +1,17 @@
+package ie.dit.miedziejewski.adam;
+
+public class Product 
+{
+	public String gunName;
+	public String gunDescription;
+	public String gunPrice;
+	public int qty;
+	
+	public Product (String gunName, String gunPrice, int qty)
+	{
+		this.gunName = gunName;
+		this.gunDescription = gunDescription;
+		this.gunPrice = gunPrice;
+		this.qty = qty;
+	}
+}

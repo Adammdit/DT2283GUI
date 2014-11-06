@@ -1,0 +1,20 @@
+package ie.dit.miedziejewski.adam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Group 
+{
+	public String string;
+	public final List<String> gunName = new ArrayList<String>();
+	public final List<Float> gunPrice = new ArrayList<Float>();
+
+	public Group(String string) 
+	{
+		this.string = string;
+		
+	
+	}
+	
+	
+} 

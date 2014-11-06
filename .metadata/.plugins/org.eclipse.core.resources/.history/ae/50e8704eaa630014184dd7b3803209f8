@@ -1,0 +1,166 @@
+package ie.dit.miedziejewski.adam;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.util.SparseArray;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.CheckedTextView;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MyExpandableListAdapter extends BaseExpandableListAdapter 
+{
+	private final SparseArray<Group> groups;
+	public LayoutInflater inflater;
+	public Activity activity;
+
+	public MyExpandableListAdapter(Activity act, SparseArray<Group> groups) 
+	{
+		activity = act;
+		this.groups = groups;
+		inflater = act.getLayoutInflater();
+	}
+
+	@Override
+	public Object getChild(int groupPosition, int childPosition) 
+	{
+		return groups.get(groupPosition).gunPrice.get(childPosition);
+	}
+	
+	@Override
+	public long getChildId(int groupPosition, int childPosition) 
+	{
+		return 0;
+	}
+
+	@Override
+	public View getChildView(int groupPosition, final int childPosition,
+			boolean isLastChild, View convertView, ViewGroup parent) 
+	{
+		final List<String> children = (List<String>)getChild(groupPosition, childPosition);
+
+		TextView text = null;
+		View rowView = convertView;
+    
+		if (rowView == null) 
+		{
+			rowView = inflater.inflate(R.layout.listrow_details, null);
+		}
+    
+		text = (TextView) rowView.findViewById(R.id.textView1);
+		text.setText(children);
+		
+		ImageView imageView = (ImageView)rowView.findViewById(R.id.weaponeImage);
+    
+		rowView.setOnClickListener(new OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) 
+			{
+				Toast.makeText(activity, children,
+				Toast.LENGTH_SHORT).show();
+			}
+		});
+
+		if (text.getText().equals("ACP 45"))
+		{
+			imageView.setImageResource(R.drawable.acp45);
+		}
+		else if (text.getText().equals("ACP 5"))
+		{
+			imageView.setImageResource(R.drawable.acp5);
+		}
+		else if (text.getText().equals("ATI"))
+		{
+			imageView.setImageResource(R.drawable.ati);
+		}
+		else if (text.getText().equals("Charter"))
+		{
+			imageView.setImageResource(R.drawable.charter);
+		}
+		else if (text.getText().equals("Pantera"))
+		{
+			imageView.setImageResource(R.drawable.pantera);
+		}
+		else if (text.getText().equals("SPL 38"))
+		{
+			imageView.setImageResource(R.drawable.spl38);
+		}
+		else
+		{
+			imageView.setImageResource(R.drawable.taurus);
+		}
+
+		return rowView;
+	}
+
+	@Override
+	public int getChildrenCount(int groupPosition) 
+	{
+		return groups.get(groupPosition).gunName.size();
+	}
+
+	@Override
+	public Object getGroup(int groupPosition) 
+	{
+		return groups.get(groupPosition);
+	}
+
+	@Override
+	public int getGroupCount() 
+	{
+		return groups.size();
+	}
+
+	@Override
+	public void onGroupCollapsed(int groupPosition) 
+	{
+		super.onGroupCollapsed(groupPosition);
+	}
+
+	@Override
+	public void onGroupExpanded(int groupPosition) 
+	{
+		super.onGroupExpanded(groupPosition);
+	}
+
+	@Override
+	public long getGroupId(int groupPosition) 
+	{
+		return 0;
+	}
+
+	@Override
+	public View getGroupView(int groupPosition, boolean isExpanded,
+			View convertView, ViewGroup parent) 
+	{
+		if (convertView == null) 
+		{
+			convertView = inflater.inflate(R.layout.listrow_group, null);
+		}
+		
+		Group group = (Group) getGroup(groupPosition);
+		((CheckedTextView) convertView).setText(group.string);
+		((CheckedTextView) convertView).setChecked(isExpanded);
+   
+		return convertView;
+	}
+
+	@Override
+	public boolean hasStableIds() 
+	{
+		return false;
+	}
+
+	@Override
+	public boolean isChildSelectable(int groupPosition, int childPosition) 
+	{
+		return false;
+	}
+} 

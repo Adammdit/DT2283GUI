@@ -1,0 +1,43 @@
+package ie.dit.miedziejewski.adam;
+
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.SparseArray;
+import android.view.Menu;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity 
+{
+	// more efficient than HashMap for mapping integers to objects
+	SparseArray<Group> groups = new SparseArray<Group>();
+	ImageView image;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);
+	}
+
+	public void createData() 
+	{
+		image = (ImageView) findViewById(R.id.textView1);
+		
+		Group handguns = new Group("Handguns");
+		handguns.children.add("Magnum .45");
+		Group assault = new Group("Assault");
+		image.setImageResource(R.drawable.bulldog);
+	 
+      groups.append(0, handguns);
+      groups.append(1, assault);
+	}
+
+}

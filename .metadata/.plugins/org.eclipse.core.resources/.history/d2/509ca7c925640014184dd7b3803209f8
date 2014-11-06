@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="handgunName">
+        <item>APC 5</item>
+        <item>Bulldog</item>
+        <item>M 44</item>
+        <item>MAC 1911</item>
+        <item>SPL 38</item>
+        <item>SW 325</item>
+        <item>SW 45</item>
+    </string-array> 
+    
+    <string-array name="handgunPrice">
+        <item>592.41</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array> 
+</resources>

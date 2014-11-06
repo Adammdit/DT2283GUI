@@ -5,7 +5,7 @@
     
 
     
-    <!-- Makes list scrolable -->
+    <!-- Allows to scrool in vertical possition -->
     <ScrollView
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content">
@@ -30,7 +30,8 @@
 				    android:layout_height="wrap_content"
 				    android:paddingLeft="65dp"	    
 				    android:ems="10"
-				    android:inputType="textPersonName" />
+				    android:inputType="textPersonName"
+				    android:hint="Enter your name" />
 		    	<TextView
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"

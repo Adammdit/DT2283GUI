@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;GunSmoke/res/drawable-mdpi/38spl.png&apos; to &apos;spl38.png&apos;" description="Rename resource &apos;38spl.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable-mdpi/38spl.png" name="spl38.png" stamp="1414637048755" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;GunSmoke/res/drawable-mdpi/44m.png&apos; to &apos;m44.png&apos;" description="Rename resource &apos;44m.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable-mdpi/44m.png" name="m44.png" stamp="1414637070618" updateReferences="true"/>
+</session>

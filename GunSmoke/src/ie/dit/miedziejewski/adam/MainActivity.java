@@ -1,36 +1,58 @@
 package ie.dit.miedziejewski.adam;
 
-
-import android.app.ListActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.SparseArray;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
 
-public class MainActivity extends ListActivity 
+public class MainActivity extends Activity
 {
-	String[] melee;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) 
-    {
-		super.onCreate(savedInstanceState);
+	String[] gunName, gunDescription, gunPrice;
+	Integer[] qty;
+	EditText editQty;
+	// more efficient than HashMap for mapping integers to objects
+	SparseArray<Group> groups = new SparseArray<Group>();
+	ImageView image;
+	
+	private Double orderTotal = 0.00;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
 		
-		melee = getResources().getStringArray(R.array.melee);
-        // setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_main, sys));
-        setListAdapter(new CustomAdapter(this, melee));
-        
-        ListView listView = getListView();
-		listView.setTextFilterEnabled(true);
-		/*
-		listView.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-			    // When clicked, show a toast with the TextView text
-			    Toast.makeText(getApplicationContext(),
-				((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-			}
-		});*/
-    }
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
+		
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);	
+		
+	}
+	
 
-    // http://www.mkyong.com/android/android-listview-example/
+	
+	public void createData() 
+	{	
+		gunName = getResources().getStringArray(R.array.handgunName);
+		gunPrice = getResources().getStringArray(R.array.handgunPrice);
+		
+		Group handguns = new Group("Handguns");
+		
+		for(int i=0; i<gunName.length; i++)
+		{
+			Product e = new Product(gunName[i], "", Double.parseDouble(gunPrice[i]));
+			handguns.children.add(e);
+		}		
 
+		Group assault = new Group("Assault");
+	 
+		groups.append(0, handguns);
+		groups.append(1, assault);
+	}
 }

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity" >
+	
+    <ImageView
+        android:id="@+id/weaponeImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_height="60dp" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_height="60dp" />
+	
+    <EditText		    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dp"	    
+		android:ems="10"
+		android:inputType="number"
+		android:hint="Qty" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+
+        
+
+</LinearLayout> 
