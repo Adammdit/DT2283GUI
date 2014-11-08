@@ -6,6 +6,8 @@
     android:background="#3D3D00"
     android:padding="6dip" >
 
+    
+    
     <ImageView
         android:id="@+id/weaponeImage"
         android:layout_width="60dip"
@@ -58,4 +60,5 @@
         android:inputType="number" >
         <requestFocus />
     </EditText>
+    
 </RelativeLayout>

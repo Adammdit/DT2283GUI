@@ -9,7 +9,7 @@
     android:paddingTop="10dp"
     android:orientation="vertical"
     tools:context=".MainActivity" >
-	
+    
     <TextView 
         android:id="@+id/cartTotal" 
         android:layout_width="match_parent"
@@ -19,11 +19,20 @@
   		android:text="€ 0.00"
   		android:textColor="@color/total"
   		android:textStyle="bold" />
-    
+
+    <Button
+        android:id="@+id/checkout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="checkout" />
+	
     <ExpandableListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ExpandableListView>
 
+    
+ 
 </LinearLayout> 

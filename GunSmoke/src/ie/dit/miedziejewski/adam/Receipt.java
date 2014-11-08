@@ -1,0 +1,16 @@
+package ie.dit.miedziejewski.adam;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class Receipt extends Activity 
+{
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_receipt);
+	}
+}

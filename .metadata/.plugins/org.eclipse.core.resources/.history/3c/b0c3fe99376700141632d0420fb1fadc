@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TextView 
+        android:id="@+id/cartTotal" 
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content" 
+  		android:gravity="right"
+        android:textSize="20sp"
+  		android:text="€ 0.00"
+  		android:textColor="@color/total"
+  		android:textStyle="bold" />
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/listView"
+        android:layout_weight="1"
+        android:text="Button" />
+    
+</LinearLayout> 

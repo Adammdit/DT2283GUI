@@ -30,12 +30,17 @@
             android:name=".DetailsForm"
             android:label="@string/title_activity_details_form" >
         </activity>
-        
+
         <!-- Main activity -->
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".Receipt"
+            android:label="@string/title_activity_receipt" >
         </activity>
     </application>
 

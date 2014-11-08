@@ -3,19 +3,24 @@ package ie.dit.miedziejewski.adam;
 import java.text.DecimalFormat;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.SparseArray;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity
+public class MainActivity extends Activity implements View.OnClickListener
 {
 	String[] gunName, gunDescription, gunPrice;
 	Integer[] qty;
 	EditText editQty;
+	Button btn;
 	private static Double orderTotal = 0.00;
 	private static TextView tot;
 	// more efficient than HashMap for mapping integers to objects
@@ -29,7 +34,9 @@ public class MainActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		btn = (Button)findViewById(R.id.checkout);
+		btn.setOnClickListener(this);
+		
 		createData();
 		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
 
@@ -37,6 +44,7 @@ public class MainActivity extends Activity
 		listView.setAdapter(adapter);	
 		tot = (TextView) findViewById(R.id.cartTotal);
 	}
+	
 	// Update total value
 	public void updateTotal(Double t)
 	{
@@ -63,5 +71,23 @@ public class MainActivity extends Activity
 	 
 		groups.append(0, handguns);
 		groups.append(1, assault);
+	}
+
+	@Override
+	public void onClick(View v) 
+	{
+		if (orderTotal > 1000.00)
+		{
+			System.out.println("It's over your budget!!!");
+			Toast.makeText(this, "Value of your shopping is over your budget. " +
+					"Remove some of your items and try again.",
+					Toast.LENGTH_SHORT).show();
+		}
+		else
+		{
+			Intent i = new Intent(MainActivity.this, Receipt.class);
+	        startActivity(i);
+		}
+		
 	}
 }
