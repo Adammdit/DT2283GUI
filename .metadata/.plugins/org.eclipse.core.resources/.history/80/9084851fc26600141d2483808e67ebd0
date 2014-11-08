@@ -1,0 +1,69 @@
+package ie.dit.miedziejewski.adam;
+
+import java.text.DecimalFormat;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.SparseArray;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity
+{
+	String[] gunName, gunDescription, gunPrice;
+	Integer[] qty;
+	EditText editQty;
+	TextView view;
+	// more efficient than HashMap for mapping integers to objects
+	SparseArray<Group> groups = new SparseArray<Group>();
+	ImageView image;
+	public Double orderTotal = 0.00;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		DecimalFormat df = new DecimalFormat("0.00##");
+		
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
+		TextView cartTotal = (TextView) view.findViewById(R.id.cartTotal);
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);	
+		
+		//cartTotal.setText(df.format(orderTotal));
+	}
+	
+
+	public MainActivity() {
+		super();
+		this.view = view;
+	}
+
+
+	public void createData() 
+	{	
+		gunName = getResources().getStringArray(R.array.handgunName);
+		gunPrice = getResources().getStringArray(R.array.handgunPrice);
+		
+		Group handguns = new Group("Handguns");
+		
+		for(int i=0; i<gunName.length; i++)
+		{
+			Product e = new Product(gunName[i], "", Double.parseDouble(gunPrice[i]));
+			handguns.children.add(e);
+		}		
+
+		Group assault = new Group("Assault");
+	 
+		groups.append(0, handguns);
+		groups.append(1, assault);
+	}
+}

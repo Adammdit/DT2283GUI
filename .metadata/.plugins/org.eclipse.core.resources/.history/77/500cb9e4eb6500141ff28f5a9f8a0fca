@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" 
+ android:layout_height="wrap_content"
+ android:orientation="vertical" 
+ android:padding="6dip">
+	
+    <ImageView
+        android:id="@+id/weaponeImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp" 
+  		android:layout_alignParentLeft="true"
+  		android:layout_alignParentTop="true" 
+  		android:ems="10"/>
+    
+    <TextView
+        android:id="@+id/weaponeName"
+        android:layout_width="100sp"
+ 		android:layout_height="wrap_content" 
+ 		android:layout_alignTop="@+id/weaponeImage"
+  		android:layout_marginLeft="65dp" 
+  		android:layout_toRightOf="@+id/weaponeImage"
+  		android:text="Medium Text" 
+  		android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_height="60dp" />
+	
+    <EditText
+        android:id="@+id/qty"
+		android:layout_width="50sp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginBottom="15dp"
+		android:paddingLeft="5dp"		    
+		android:ems="10"
+		android:inputType="number" 
+		android:hint="Qty" />
+
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+
+        
+
+</RelativeLayout> 

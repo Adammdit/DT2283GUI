@@ -50,26 +50,29 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 	{
 		DecimalFormat df = new DecimalFormat("0.00##");
 		final Product children = (Product) getChild(groupPosition, childPosition);
-
-		TextView text, text2;
 		View rowView = convertView;
-
 		
 		if (rowView == null) 
 		{
 			rowView = inflater.inflate(R.layout.listrow_details, null);
 			EditText quantity = (EditText) rowView.findViewById(R.id.qty);
+			
+			quantity.setFocusableInTouchMode(true);
+			quantity.requestFocus();
+			
 			//attach the TextWatcher listener to the EditText
 		    quantity.addTextChangedListener(new MyTextWatcher(rowView));
 		    
-		    if(groupPosition % 2 == 0)
+		    if(childPosition % 2 == 0)
 		    {
-		    	rowView.setBackgroundColor(Color.rgb(238, 233, 233));
+		    	rowView.setBackgroundColor(Color.rgb(51, 51, 0));
 		    }
 		}
 
 		EditText quantity = (EditText) rowView.findViewById(R.id.qty);
 		quantity.setTag(children);
+		
+		quantity.setSelection(quantity.getText().length());
 		
 		if(children.getQuantity() != 0)
 		{
@@ -80,11 +83,21 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 		    quantity.setText("");
 		}
 		
-		TextView name = (TextView) rowView.findViewById(R.id.textView1);
+		TextView name = (TextView) rowView.findViewById(R.id.weaponeName);
 		name.setText(children.getName());
-		TextView price = (TextView) rowView.findViewById(R.id.textView2);
+		TextView price = (TextView) rowView.findViewById(R.id.weaponPrice);
 		price.setText("€" + df.format(children.getPrice()));
-    
+		
+		TextView ext = (TextView) rowView.findViewById(R.id.weaponExt);
+		
+		if(children.getQuantity() != 0)
+		{
+			ext.setText("€" + df.format(children.getExt()));
+		}
+		else 
+		{
+		    ext.setText("");
+		}
 		// text = (TextView) rowView.findViewById(R.id.textView1);
 		// text.setText(children.gunName);
 		

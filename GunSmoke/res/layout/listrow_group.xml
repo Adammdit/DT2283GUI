@@ -11,5 +11,6 @@
     android:text="Test"
     android:textSize="14sp"
     android:textAlignment="textEnd"
+    android:background="@color/khaki"
     android:textStyle="bold" /> 
 

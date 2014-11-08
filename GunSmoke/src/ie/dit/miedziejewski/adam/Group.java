@@ -12,6 +12,4 @@ public class Group
 	{
 		this.string = string;	
 	}
-	
-	
 } 

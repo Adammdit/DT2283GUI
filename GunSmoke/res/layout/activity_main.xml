@@ -7,8 +7,19 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
+    android:orientation="vertical"
     tools:context=".MainActivity" >
-
+	
+    <TextView 
+        android:id="@+id/cartTotal" 
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content" 
+  		android:gravity="right"
+        android:textSize="20sp"
+  		android:text="€ 0.00"
+  		android:textColor="@color/total"
+  		android:textStyle="bold" />
+    
     <ExpandableListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
