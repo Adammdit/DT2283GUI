@@ -8,6 +8,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
@@ -21,6 +22,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 	Integer[] qty;
 	EditText editQty;
 	Button btn;
+	Intent intent;
 	private static Double orderTotal = 0.00;
 	private static TextView tot;
 	// more efficient than HashMap for mapping integers to objects
@@ -35,21 +37,50 @@ public class MainActivity extends Activity implements View.OnClickListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		btn = (Button)findViewById(R.id.checkout);
+		// Assigning listener to button
 		btn.setOnClickListener(this);
-		
+		// receive user name and email with intent  
+		intent = getIntent();
+
 		createData();
 		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
 
 		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
 		listView.setAdapter(adapter);	
 		tot = (TextView) findViewById(R.id.cartTotal);
+		
+		btn.setOnClickListener(new OnClickListener() 
+		{
+	        @Override
+	        public void onClick(View v) 
+	        {
+	        	if (orderTotal > Double.parseDouble(intent.getStringExtra("budget")))
+	    		{
+	    			Toast.makeText(MainActivity.this, "Value of your shopping is over your budget. " +
+	    					"Remove some of your items and try again.",
+	    					Toast.LENGTH_SHORT).show();
+	    		}
+	        	else
+	        	{
+		        	Intent intent = new Intent(MainActivity.this, Receipt.class);
+		    		intent.putExtra("name", intent.getStringExtra("name"));
+		        	intent.putExtra("email", intent.getStringExtra("email"));
+		        	intent.putExtra("budget", intent.getStringExtra("budget"));
+		        	intent.putExtra("age", intent.getStringExtra("age"));
+		        	intent.putExtra("gender", intent.getStringExtra("gender"));
+		        	intent.putExtra("job", intent.getStringExtra("job"));
+		        	
+		            startActivity(intent);
+		            finish();
+	        	}
+	        }	
+		});
 	}
 	
 	// Update total value
 	public void updateTotal(Double t)
 	{
 		orderTotal = orderTotal + t;
-		// System.out.println("Update called : " + orderTotal);
 		tot.setText("€" + String.valueOf(df.format(orderTotal)));
 		return;
 	}
@@ -76,18 +107,8 @@ public class MainActivity extends Activity implements View.OnClickListener
 	@Override
 	public void onClick(View v) 
 	{
-		if (orderTotal > 1000.00)
-		{
-			System.out.println("It's over your budget!!!");
-			Toast.makeText(this, "Value of your shopping is over your budget. " +
-					"Remove some of your items and try again.",
-					Toast.LENGTH_SHORT).show();
-		}
-		else
-		{
-			Intent i = new Intent(MainActivity.this, Receipt.class);
-	        startActivity(i);
-		}
-		
+
 	}
 }
+
+

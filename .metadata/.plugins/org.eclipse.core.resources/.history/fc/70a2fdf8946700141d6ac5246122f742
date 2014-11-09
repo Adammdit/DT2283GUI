@@ -1,0 +1,130 @@
+package ie.dit.miedziejewski.adam;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+public class DetailsForm extends Activity implements OnItemSelectedListener
+{
+	EditText formName, formAge, formEmail, formBudget;
+	Button next;
+	RadioGroup radioGender;
+	String gender = "";
+	int age = 0;
+	int minAge = 21;
+	Boolean empty;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_details_form);
+		next = (Button) findViewById(R.id.continueButton);
+		formName = (EditText)findViewById(R.id.editName);
+		formEmail = (EditText)findViewById(R.id.editEmail);
+		formAge = (EditText)findViewById(R.id.editAge);
+		formBudget = (EditText)findViewById(R.id.editBudget);
+		radioGender = (RadioGroup) findViewById(R.id.gender);
+		//radioGender.setOnCheckedChangeListener((OnCheckedChangeListener) this);
+		
+		radioGender.setOnCheckedChangeListener(new OnCheckedChangeListener() 
+		{
+			@Override
+	        public void onCheckedChanged(RadioGroup group, int checkedId) 
+			{
+	            // find which radio button is selected
+	            if(checkedId == R.id.male) {
+	                gender = "Male";
+	            } else {
+	            	gender = "Female";
+	            }
+	        }
+		});
+
+		// Assigning listener to button
+		next.setOnClickListener(new OnClickListener() 
+		{
+	        @Override
+	        public void onClick(View v) 
+	        {	 
+	        	//age = Integer.parseInt(formAge.getText().toString());
+	        	
+	        	if (isEmpty(formName)|isEmpty(formEmail)|isEmpty(formAge))
+	        	{
+	        		Toast.makeText(getApplicationContext(), "Please specify all fields in the form.", Toast.LENGTH_SHORT).show();	
+	        	}
+	        	else if (age < minAge)
+	        	{
+	        		Toast.makeText(getApplicationContext(), "You are to young to own a gun !", Toast.LENGTH_SHORT).show();	
+	        	}
+	        	
+	        	
+	        		//Toast.makeText(getApplicationContext(), "Please specify all fields in the form.", Toast.LENGTH_SHORT).show();
+	        		/*
+		        	Intent intent = new Intent(DetailsForm.this, MainActivity.class);
+		        	
+		        	// send with intent user name and email
+		        	intent.putExtra("name", formName.getText().toString());
+		        	intent.putExtra("email", formEmail.getText().toString());
+		        	intent.putExtra("gender", gender);
+		        	intent.putExtra("age", formAge.getText().toString());
+		        	intent.putExtra("budget", formBudget.getText().toString());
+		        	
+		            startActivity(intent);
+		            // close this activity
+		            finish();  */
+	        	
+	        }
+	    });
+		
+		
+		// Reference: The following code is from 
+        // http://developer.android.com/guide/topics/ui/controls/spinner.html
+        Spinner jobSpiner = (Spinner) findViewById(R.id.jobSpinner);
+        jobSpiner.setOnItemSelectedListener(this);
+		// Create an ArrayAdapter using the string array and a default spinner layout
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		        R.array.jobTitles, android.R.layout.simple_spinner_item);
+		// Specify the layout to use when the list of choices appears
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Apply the adapter to the spinner
+		jobSpiner.setAdapter(adapter);
+        // Reference complete
+	}
+	
+	// check if edit text is empty
+	private boolean isEmpty(EditText etText) 
+	{
+	    if (etText.getText().toString().trim().length() > 0) 
+	    {
+	        return false;
+	    } else 
+	    {
+	        return true;
+	    }
+	}
+	
+	public void onItemSelected(AdapterView<?> parent, View view, 
+            int pos, long id) 
+	{
+        // An item was selected. You can retrieve the selected item using
+		String selected = parent.getItemAtPosition(pos).toString();
+		Toast.makeText(this, selected, Toast.LENGTH_LONG).show();
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) 
+    {
+        // Another interface callback
+    }
+}

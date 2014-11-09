@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GunSmoke</string>
+    <string name="title">Details form:</string>
+    <string name="mainLabel">Main list</string>
+    <string name="nameLabel">NAME : </string>
+    <string name="ageLabel">AGE : </string>
+    <string name="emailLabel">EMAIL : </string>
+    <string name="budgetLabel">BUDGET : </string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="buttonLabel">Continue</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="splash_info">All prices excludes vat = 21%</string>
+    <string name="title_activity_details_form">DetailsForm</string>
+    <string name="budgetHint">Enter available budget</string>
+    <string name="emailHint">Enter your email address</string>
+    <string name="ageHint">Enter your age</string>
+
+    <!-- List of job titles -->
+    <string-array name="jobTitles">
+        <item>Select job title</item>
+        <item>iPhone</item>
+        <item>WindowsMobile</item>
+        <item>Blackberry</item>
+        <item>WebOS</item>
+        <item>Ubuntu</item>
+        <item>Windows7</item>
+        <item>Max OS X</item>
+        <item>Linux</item>
+        <item>OS/2</item>
+    </string-array>
+    <!-- Melee weapones -->
+    <string-array name="melee">
+        <item>Knife</item>
+        <item>Machete</item>
+        <item>Maltador</item>
+        <item>Galstead</item>
+        <item>Throwing knife</item>
+        <item>Ubuntu</item>
+        <item>Windows7</item>
+        <item>Max OS X</item>
+        <item>Linux</item>
+        <item>OS/2</item>
+    </string-array>
+
+    <string name="title_activity_receipt">Receipt</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

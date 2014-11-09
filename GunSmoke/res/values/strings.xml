@@ -12,21 +12,37 @@
     <string name="male">Male</string>
     <string name="buttonLabel">Continue</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="splash_info">All products prices excluding vat 21%!</string>
+    <string name="splash_info">All prices excludes vat = 21%</string>
     <string name="title_activity_details_form">DetailsForm</string>
+    <string name="budgetHint">Enter available budget</string>
+    <string name="emailHint">Enter your email address</string>
+    <string name="ageHint">Enter your age</string>
+    <string name="formInfo">Please register first :</string>
+    <string name="nameHint">Enter your name</string>
 
     <!-- List of job titles -->
     <string-array name="jobTitles">
-        <item>Select job title</item>
-        <item>iPhone</item>
-        <item>WindowsMobile</item>
-        <item>Blackberry</item>
-        <item>WebOS</item>
-        <item>Ubuntu</item>
-        <item>Windows7</item>
-        <item>Max OS X</item>
-        <item>Linux</item>
-        <item>OS/2</item>
+        <item>Select your job</item>
+        <item>Accountancy, banking and finance</item>
+        <item>Animal and plant resources</item>
+        <item>Advertising, marketing and PR</item>
+        <item>Business, consulting and management</item>
+        <item>Charity and voluntary work</item>
+        <item>Creative arts and design</item>
+        <item>Education</item>
+        <item>Engineering, manufacturing and production</item>
+        <item>Healthcare</item>
+        <item>Human resources and employment</item>        
+        <item>Information services</item>
+        <item>Information technology</item>
+        <item>Insurance and pensions</item>
+        <item>Law</item>
+        <item>Leisure, sport and tourism</item>      
+        <item>Media and broadcasting</item>
+        <item>Performing arts</item>
+        <item>Publishing and journalism</item>
+        <item>Scientific services</item>     
+        <item>Transport, logistics and distribution</item>
     </string-array>
     <!-- Melee weapones -->
     <string-array name="melee">

@@ -10,13 +10,21 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class DetailsForm extends Activity implements OnItemSelectedListener
 {
-	EditText name, age, email, budget;
+	EditText formName, formEmail, formBudget;
 	Button next;
+	Spinner mySpinner;
+	RadioGroup radioGender;
+	String gender = "";
+	Boolean compleateDetails = true;
+	int minAge = 21;
+	int age = 0;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -24,18 +32,74 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_details_form);
 		next = (Button) findViewById(R.id.continueButton);
+		formName = (EditText)findViewById(R.id.editName);
+		formEmail = (EditText)findViewById(R.id.editEmail);
+		final EditText formAge = (EditText)findViewById(R.id.editAge);
+		formBudget = (EditText)findViewById(R.id.editBudget);
+		radioGender = (RadioGroup) findViewById(R.id.gender);
+		mySpinner = (Spinner) findViewById(R.id.jobSpinner);
+		
+		radioGender.setOnCheckedChangeListener(new OnCheckedChangeListener() 
+		{
+			@Override
+	        public void onCheckedChanged(RadioGroup group, int checkedId) 
+			{
+	            // find which radio button is selected
+	            if(checkedId == R.id.male) {
+	                gender = "Male";
+	            } else {
+	            	gender = "Female";
+	            }
+	        }
+		});
+
 		// Assigning listener to button
 		next.setOnClickListener(new OnClickListener() 
 		{
 	        @Override
-	        public void onClick(View v) {
-	        	Intent i = new Intent(DetailsForm.this, MainActivity.class);
-	            startActivity(i);
-	            // close this activity
-	            finish();
+	        public void onClick(View v) 
+	        {	 
+	        	compleateDetails = true;
+	        	// edittext can't be empty before parsing number from it
+	        	if (!isEmpty(formAge))
+	        	{
+	        		age = Integer.parseInt(formAge.getText().toString());
+	        		
+	        	} 
+	        	
+	        	if (isEmpty(formName)|isEmpty(formEmail)|isEmpty(formAge)|isEmpty(formBudget)|gender == "")
+	        	{
+	        		Toast.makeText(getApplicationContext(), "Please specify all fields in the form.", Toast.LENGTH_SHORT).show();
+	        		compleateDetails = false;
+	        	}
+	        	else if (mySpinner.getSelectedItem().toString().equals("Select your job"))
+	        	{
+	        		Toast.makeText(getApplicationContext(), "Please specify your job.", Toast.LENGTH_SHORT).show();
+	        		compleateDetails = false;
+	        	}
+	        	else if (age < minAge)
+	        	{
+	        		Toast.makeText(getApplicationContext(), "You are to young to own a gun !", Toast.LENGTH_SHORT).show();	
+	        		compleateDetails = false;
+	        	}
+	        	// if all data compleate
+	        	if (compleateDetails)
+	        	{
+		        	Intent intent = new Intent(DetailsForm.this, MainActivity.class);	        	
+		        	// send with intent user name and email
+		        	intent.putExtra("name", formName.getText().toString());
+		        	intent.putExtra("email", formEmail.getText().toString());
+		        	intent.putExtra("gender", gender);
+		        	intent.putExtra("age", Integer.toString(age));
+		        	intent.putExtra("budget", formBudget.getText().toString());
+		        	intent.putExtra("job", mySpinner.getSelectedItem().toString());
+		            startActivity(intent);
+		            // close this activity
+		            finish();  
+	        	}
 	        }
 	    });
-
+				
 		// Reference: The following code is from 
         // http://developer.android.com/guide/topics/ui/controls/spinner.html
         Spinner jobSpiner = (Spinner) findViewById(R.id.jobSpinner);
@@ -48,30 +112,29 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 		// Apply the adapter to the spinner
 		jobSpiner.setAdapter(adapter);
         // Reference complete
+	}	
+	// check if edit text is empty
+	private boolean isEmpty(EditText etText) 
+	{
+	    if (etText.getText().toString().trim().length() > 0) 
+	    {
+	        return false;
+	    } else 
+	    {
+	        return true;
+	    }
 	}
-	
-	
 	
 	public void onItemSelected(AdapterView<?> parent, View view, 
             int pos, long id) 
 	{
         // An item was selected. You can retrieve the selected item using
-		String selected = parent.getItemAtPosition(pos).toString();
-		Toast.makeText(this, selected, Toast.LENGTH_LONG).show();
+		// String selected = parent.getItemAtPosition(pos).toString();
+		// Toast.makeText(this, selected, Toast.LENGTH_LONG).show();	
     }
 
     public void onNothingSelected(AdapterView<?> parent) 
     {
         // Another interface callback
     }
-    /*
-    public void onClick(View view) 
-	{
-    	// This method will be executed once the timer is over
-        // Start your app main activity
-        Intent i = new Intent(DetailsForm.this, MainActivity.class);
-        startActivity(i);
-        // close this activity
-        finish();
-	}*/
 }

@@ -4,4 +4,5 @@
 	<color name="price">#E5FFCC</color> 
 	<color name="name">#CC6600</color> 
 	<color name="total">#0080FF</color> 
+	<color name="formBackground">#3D3D00</color> 
 </resources>

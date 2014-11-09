@@ -97,17 +97,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 		else 
 		{
 		    ext.setText("");
-		}
-		// text = (TextView) rowView.findViewById(R.id.textView1);
-		// text.setText(children.gunName);
-		
-		// text2 = (TextView) rowView.findViewById(R.id.textView2);
-		// text2.setText(children.gunPrice.toString());
-		
-		// text3 = (TextView) rowView.findViewById(R.id.qty);
-		// text3.setText(children.qty.toString());
-		// children.qty = (text3.toString());
-		
+		}	
 		
 		ImageView imageView = (ImageView)rowView.findViewById(R.id.weaponeImage);
     
