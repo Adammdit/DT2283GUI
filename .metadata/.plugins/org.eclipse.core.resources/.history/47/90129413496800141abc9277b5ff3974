@@ -1,0 +1,16 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/handguns"
+    android:gravity="left"
+    android:paddingLeft="32dp"
+    android:paddingRight="10dp"
+    android:possition="vertical"
+    android:text="Test"
+    android:textSize="18sp"
+    android:background="@color/khaki"
+
+    android:textStyle="bold" /> 
+

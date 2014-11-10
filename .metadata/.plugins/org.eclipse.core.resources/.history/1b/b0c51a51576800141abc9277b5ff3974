@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="handgunName">
+        <item>Commander .45ACP</item>
+        <item>Rossi R851</item>
+        <item>ATI GSG .22LR</item>
+        <item>Charter 38SPL</item>
+        <item>PANTERA .45ACP</item>
+        <item>SPL 38</item>
+        <item>Taurus</item>       
+    </string-array> 
+    
+    <string-array name="handgunPrice">
+        <item>431.65</item>
+        <item>592.41</item>
+        <item>342.37</item>
+        <item>360.59</item>
+        <item>1469.13</item>
+        <item>228.37</item>
+        <item>433.82</item>
+    </string-array> 
+    
+    <string-array name="handgunDescription">
+        <item>American Classic 1911, Commander, 45ACP, 4.25" Barrel, Blue Finish, Plastic Grips, 3 Dot Sights, 8Rd, 1 Magazine ACC45B</item>
+        <item>Rossi Model R851, Small Frame Revolver, 357 Magnum, 4" Barrel, Steel Frame, Blue Finish, Rubber Grips, Fixed Sights, 6Rd R85104</item>
+        <item>GSG M1911 AD-OPS 22LR 5" SUPP FAUX SUPPRESSOR / PIC RAIL</item>
+        <item>Charter Arms Goldfinger, 38 Special, 2" Barrel, Aluminum Frame, Gold Finish, Rubber Grips, Fixed Sights, 5Rd, Ultra Lite, Fired Case 53890</item>
+        <item>1469.13</item>
+        <item>228.37</item>
+        <item>433.82</item>
+    </string-array> 
+</resources>

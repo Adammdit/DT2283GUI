@@ -1,0 +1,140 @@
+package ie.dit.miedziejewski.adam;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.util.SparseArray;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity implements View.OnClickListener
+{
+	String[] gunName, gunDescription, gunPrice;
+	Integer[] qty;
+	EditText editQty;
+	Button btn;
+	Intent intent;
+	private static Double orderTotal = 0.00;
+	private static TextView tot;
+	// more efficient than HashMap for mapping integers to objects
+	SparseArray<Group> groups = new SparseArray<Group>();
+	// define decimal format	
+	DecimalFormat df = new DecimalFormat("0.00##");
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		btn = (Button)findViewById(R.id.checkout);
+		// Assigning listener to button
+		btn.setOnClickListener(this);
+		// receive user name and email with intent  
+		intent = getIntent();
+
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.listView);	
+
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);	
+		tot = (TextView) findViewById(R.id.cartTotal);
+		
+		btn.setOnClickListener(new OnClickListener() 
+		{
+	        @Override
+	        public void onClick(View v) 
+	        {
+	        	if (orderTotal > Double.parseDouble(intent.getStringExtra("budget")))
+	    		{
+	    			Toast.makeText(MainActivity.this, "Value of your shopping is over your budget. " +
+	    					"Remove some of your items and try again.",
+	    					Toast.LENGTH_SHORT).show();
+	    		}
+	    		
+	        	else
+	        	{
+	        		Intent intent = new Intent(MainActivity.this, Receipt.class);
+	        		ArrayList<Product> sold = new ArrayList<Product>();
+		        	
+		        	for(int i = 0; i < groups.size(); i++)
+		        	{
+		        	    int key = groups.keyAt(i);
+		        	    Group value = groups.valueAt(i);
+		        	    
+		        	    Iterator<Product> itr = value.children.iterator();
+		        	    while (itr.hasNext()) 
+		        	    {
+		        	        Product element = itr.next();
+		        	        if(element.getQuantity() > 0)
+		        	        {
+		        	        	System.out.printf(element.getName() + " " + "%n");
+		        	        	sold.add(element);
+		        	        }
+		        	        
+		        	    }
+		        	}
+		        	System.out.printf(sold.get(2).getName() + " " + "%n");
+		        	
+		    		intent.putExtra("formName", intent.getStringExtra("name"));
+		        	intent.putExtra("formEmail", intent.getStringExtra("email"));
+		        	intent.putExtra("formBudget", intent.getStringExtra("budget"));
+		        	intent.putExtra("formAge", intent.getStringExtra("age"));
+		        	intent.putExtra("formGender", intent.getStringExtra("gender"));
+		        	intent.putExtra("formJob", intent.getStringExtra("job"));
+		        	intent.putExtra("list", sold);
+		        	//intent.putParcelableArrayListExtra("productsList", sold);
+		            startActivity(intent);
+		            finish();
+	        	}
+	        	
+	        }	
+		});
+	}
+	
+	// Update total value
+	public void updateTotal(Double t)
+	{
+		orderTotal = orderTotal + t;
+		tot.setText("€" + String.valueOf(df.format(orderTotal)));
+		return;
+	}
+	
+	public void createData() 
+	{	
+		gunName = getResources().getStringArray(R.array.handgunName);
+		gunPrice = getResources().getStringArray(R.array.handgunPrice);
+		
+		Group handguns = new Group("Handguns");
+		
+		for(int i=0; i<gunName.length; i++)
+		{
+			Product e = new Product(gunName[i], "", Double.parseDouble(gunPrice[i]));
+			handguns.children.add(e);
+		}		
+
+		Group assault = new Group("Assault");
+	 
+		groups.append(0, handguns);
+		groups.append(1, assault);
+	}
+
+	@Override
+	public void onClick(View v) 
+	{
+
+	}
+}
+
+

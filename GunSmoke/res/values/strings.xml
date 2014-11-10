@@ -5,6 +5,7 @@
     <string name="title">Details form:</string>
     <string name="mainLabel">Main list</string>
     <string name="nameLabel">NAME : </string>
+    <string name="licenceLabel">LICENCE NO : </string>
     <string name="ageLabel">AGE : </string>
     <string name="emailLabel">EMAIL : </string>
     <string name="budgetLabel">BUDGET : </string>
@@ -19,6 +20,9 @@
     <string name="ageHint">Enter your age</string>
     <string name="formInfo">Please register first :</string>
     <string name="nameHint">Enter your name</string>
+    <string name="title_activity_receipt">Receipt</string>
+    <string name="buyerDetails">Buyer details:</string>
+    <string name="licenceHint">Enter licence no</string>
 
     <!-- List of job titles -->
     <string-array name="jobTitles">
@@ -58,7 +62,6 @@
         <item>OS/2</item>
     </string-array>
 
-    <string name="title_activity_receipt">Receipt</string>
-    <string name="hello_world">Hello world!</string>
+    
 
 </resources>

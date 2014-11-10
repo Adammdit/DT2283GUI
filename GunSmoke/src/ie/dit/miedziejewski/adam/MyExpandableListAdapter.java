@@ -106,40 +106,80 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 			@Override
 			public void onClick(View v) 
 			{
-				Toast.makeText(activity, "" + children.getQuantity(),
+				Toast.makeText(activity, children.getDescription(),
 				Toast.LENGTH_SHORT).show();
 			}
 		});
 
-		if (name.getText().equals("ACP 45"))
+		if (name.getText().equals("Commander .45ACP"))
 		{	
 			imageView.setImageResource(R.drawable.acp45);
 		}
-		else if (name.getText().equals("ACP 5"))
+		else if (name.getText().equals("Rossi R851"))
 		{
 			imageView.setImageResource(R.drawable.acp5);
 		}
-		else if (name.getText().equals("ATI"))
+		else if (name.getText().equals("ATI GSG .22LR"))
 		{
 			imageView.setImageResource(R.drawable.ati);
 		}
-		else if (name.getText().equals("Charter"))
+		else if (name.getText().equals("Charter 38SPL"))
 		{
 			imageView.setImageResource(R.drawable.charter);
 		}
-		else if (name.getText().equals("Pantera"))
+		else if (name.getText().equals("PANTERA .45ACP"))
 		{
 			imageView.setImageResource(R.drawable.pantera);
 		}
-		else if (name.getText().equals("SPL 38"))
+		else if (name.getText().equals("Armscor 38SPL"))
 		{
 			imageView.setImageResource(R.drawable.spl38);
 		}
-		else
+		else if (name.getText().equals("Taurus 357MAG"))
 		{
 			imageView.setImageResource(R.drawable.taurus);
 		}
-
+		else if (name.getText().equals("Adams 5.56"))
+		{
+			imageView.setImageResource(R.drawable.adams);
+		}
+		else if (name.getText().equals("Adcor E 223"))
+		{
+			imageView.setImageResource(R.drawable.adcor);
+		}
+		else if (name.getText().equals("ATI GSG .22LR"))
+		{
+			imageView.setImageResource(R.drawable.atigsg);
+		}
+		else if (name.getText().equals("Anderson M4 5.56"))
+		{
+			imageView.setImageResource(R.drawable.anderson);
+		}
+		else if (name.getText().equals("Armalite 223"))
+		{
+			imageView.setImageResource(R.drawable.armalite);
+		}
+		else if (name.getText().equals("Armalite 7.62"))
+		{
+			imageView.setImageResource(R.drawable.armlite2);
+		}
+		else if (name.getText().equals("Armalite .50"))
+		{
+			imageView.setImageResource(R.drawable.armlite3);
+		}
+		else if (name.getText().equals("Arsenal SAM-7"))
+		{
+			imageView.setImageResource(R.drawable.arsenal);
+		}
+		else if (name.getText().equals("1927 M1 45"))
+		{
+			imageView.setImageResource(R.drawable.m1927);
+		}
+		else if (name.getText().equals("Barrett .50BMG"))
+		{
+			imageView.setImageResource(R.drawable.barrett);
+		}
+		else{}
 		return rowView;
 	}
 
@@ -183,15 +223,18 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 	public View getGroupView(int groupPosition, boolean isExpanded,
 			View convertView, ViewGroup parent) 
 	{
+
 		if (convertView == null) 
 		{
 			convertView = inflater.inflate(R.layout.listrow_group, null);
 		}
 		
+		
 		Group group = (Group) getGroup(groupPosition);
 		((CheckedTextView) convertView).setText(group.string);
 		((CheckedTextView) convertView).setChecked(isExpanded);
-   
+		
+		
 		return convertView;
 	}
 

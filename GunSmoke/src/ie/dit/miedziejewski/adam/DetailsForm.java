@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class DetailsForm extends Activity implements OnItemSelectedListener
 {
-	EditText formName, formEmail, formBudget;
+	EditText formName, formEmail, formBudget, formLicence;
 	Button next;
 	Spinner mySpinner;
 	RadioGroup radioGender;
@@ -33,6 +33,7 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 		setContentView(R.layout.activity_details_form);
 		next = (Button) findViewById(R.id.continueButton);
 		formName = (EditText)findViewById(R.id.editName);
+		formLicence = (EditText)findViewById(R.id.editLicence);
 		formEmail = (EditText)findViewById(R.id.editEmail);
 		final EditText formAge = (EditText)findViewById(R.id.editAge);
 		formBudget = (EditText)findViewById(R.id.editBudget);
@@ -61,13 +62,13 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 	        {	 
 	        	compleateDetails = true;
 	        	// edittext can't be empty before parsing number from it
-	        	if (!isEmpty(formAge))
+	            if (!isEmpty(formAge))
 	        	{
 	        		age = Integer.parseInt(formAge.getText().toString());
 	        		
 	        	} 
 	        	
-	        	if (isEmpty(formName)|isEmpty(formEmail)|isEmpty(formAge)|isEmpty(formBudget)|gender == "")
+	        	if (isEmpty(formName)|isEmpty(formEmail)|isEmpty(formAge)|isEmpty(formBudget)|isEmpty(formLicence)|gender == "")
 	        	{
 	        		Toast.makeText(getApplicationContext(), "Please specify all fields in the form.", Toast.LENGTH_SHORT).show();
 	        		compleateDetails = false;
@@ -83,11 +84,12 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 	        		compleateDetails = false;
 	        	}
 	        	// if all data compleate
-	        	if (compleateDetails)
+	            if (compleateDetails)
 	        	{
 		        	Intent intent = new Intent(DetailsForm.this, MainActivity.class);	        	
 		        	// send with intent user name and email
 		        	intent.putExtra("name", formName.getText().toString());
+		        	intent.putExtra("licence", formLicence.getText().toString());
 		        	intent.putExtra("email", formEmail.getText().toString());
 		        	intent.putExtra("gender", gender);
 		        	intent.putExtra("age", Integer.toString(age));

@@ -1,5 +1,7 @@
 package ie.dit.miedziejewski.adam;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -13,19 +15,38 @@ import android.widget.Toast;
 
 public class Receipt extends Activity implements View.OnClickListener 
 {
-	String formName, formEmail;
-	TextView receiptName;
+	TextView receiptName, receiptLicence, receiptGender, receiptAge, receiptEmail, receiptBudget, receiptJob;
 	Button cnf;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_receipt);
 		receiptName = (TextView) findViewById(R.id.receiptName);
+		receiptLicence = (TextView) findViewById(R.id.receiptLicence);
+		receiptGender = (TextView) findViewById(R.id.receiptGender);
+		receiptAge = (TextView) findViewById(R.id.receiptAge);
+		receiptEmail = (TextView) findViewById(R.id.receiptEmail);
+		receiptBudget = (TextView) findViewById(R.id.receiptBudget);
+		receiptJob = (TextView) findViewById(R.id.receiptJob);
+		
 		//formName = getIntent().getExtras().getString("name").toString();
 		//formEmail = getIntent().getExtras().getString("email").toString();
 		cnf = (Button)findViewById(R.id.confirm);
 		cnf.setOnClickListener(this);
+		
+		Intent i = getIntent();
+
+	    ArrayList<Product> sold = i.getParcelableArrayListExtra("productsList");
+	    
+        receiptName.setText("Name: " + i.getStringExtra("formName"));
+        receiptLicence.setText("Licence No: " + i.getStringExtra("formLicence"));
+        receiptGender.setText("Gender: " + i.getStringExtra("formGender"));
+        receiptAge.setText("Age: " + i.getStringExtra("formAge"));
+        receiptJob.setText("Job: " + i.getStringExtra("formJob"));
+        receiptEmail.setText("Email: " + i.getStringExtra("formEmail"));
+        receiptBudget.setText("Budget: €" + i.getStringExtra("formBudget"));
 		
 		//receiptName.setText(formName);
 	}
