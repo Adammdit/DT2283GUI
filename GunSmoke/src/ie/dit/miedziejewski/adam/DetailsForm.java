@@ -1,5 +1,6 @@
 package ie.dit.miedziejewski.adam;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 	int minAge = 21;
 	int age = 0;
 	
+	@SuppressLint("CutPasteId")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -83,7 +85,7 @@ public class DetailsForm extends Activity implements OnItemSelectedListener
 	        		Toast.makeText(getApplicationContext(), "You are to young to own a gun !", Toast.LENGTH_SHORT).show();	
 	        		compleateDetails = false;
 	        	}
-	        	// if all data compleate
+	        	// if all data compleate create intent
 	            if (compleateDetails)
 	        	{
 		        	Intent intent = new Intent(DetailsForm.this, MainActivity.class);	        	

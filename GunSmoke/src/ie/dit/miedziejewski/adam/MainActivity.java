@@ -2,26 +2,23 @@ package ie.dit.miedziejewski.adam;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener
 {
-	String[] handgunName, assaultName, handgunDescription, assaultDescription, handgunPrice, assaultPrice;
+	String[] handgunName, assaultName, handgunDescription, assaultDescription, 
+		handgunPrice, assaultPrice, shotgunName, shotgunPrice, shotgunDescription,
+		meleeName, meleePrice, meleeDescription, archeryName, archeryPrice, archeryDescription;
 	Integer[] qty;
 	Button btn;
 	Intent i;
@@ -69,7 +66,6 @@ public class MainActivity extends Activity implements View.OnClickListener
 		        	
 		        	for(int i = 0; i < groups.size(); i++)
 		        	{
-		        	    int key = groups.keyAt(i);
 		        	    Group value = groups.valueAt(i);
 		        	    
 		        	    Iterator<Product> itr = value.children.iterator();
@@ -78,25 +74,17 @@ public class MainActivity extends Activity implements View.OnClickListener
 		        	        Product element = itr.next();
 		        	        if(element.getQuantity() > 0)
 		        	        {
-		        	        	System.out.printf(element.getName() + " " + "%n");
 		        	        	sold.add(element);
-		        	        }
-		        	        
+		        	        }	        	        
 		        	    }
 		        	}
-		        	//System.out.printf(sold.get(2).getName() + " " + "%n");
-		        	
+		        	// forwarding date with intent from previous activity plus total
 		    		intent.putExtra("formName", i.getStringExtra("name"));
 		    		intent.putExtra("formLicence", i.getStringExtra("licence"));
 		        	intent.putExtra("formEmail", i.getStringExtra("email"));
-		        	intent.putExtra("formBudget", i.getStringExtra("budget"));
-		        	intent.putExtra("formAge", i.getStringExtra("age"));
-		        	intent.putExtra("formGender", i.getStringExtra("gender"));
-		        	intent.putExtra("formJob", i.getStringExtra("job"));
-		        	//intent.putExtra("list", sold);
+		        	intent.putExtra("total", String.valueOf(df.format(orderTotal)));
 		        	intent.putParcelableArrayListExtra("productsList", sold);
 		            startActivity(intent);
-		            finish();
 	        	}
 	        	
 	        }	
@@ -110,7 +98,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 		tot.setText("TOTAL : €" + String.valueOf(df.format(orderTotal)));
 		return;
 	}
-	
+	// Used to create data. It is accessing data.xml file for strings arrays
 	public void createData() 
 	{	
 		handgunName = getResources().getStringArray(R.array.handgunName);
@@ -118,13 +106,22 @@ public class MainActivity extends Activity implements View.OnClickListener
 		handgunDescription = getResources().getStringArray(R.array.handgunDescription);
 		assaultName = getResources().getStringArray(R.array.assaultName);
 		assaultPrice = getResources().getStringArray(R.array.assaultPrice);
-		assaultDescription = getResources().getStringArray(R.array.assaultDescription);
-		
+		assaultDescription = getResources().getStringArray(R.array.assaultDescription);		
+		shotgunName = getResources().getStringArray(R.array.shotgunName);
+		shotgunPrice = getResources().getStringArray(R.array.shotgunPrice);
+		shotgunDescription = getResources().getStringArray(R.array.shotgunDescription);
+		meleeName = getResources().getStringArray(R.array.meleeName);
+		meleePrice = getResources().getStringArray(R.array.meleePrice);
+		meleeDescription = getResources().getStringArray(R.array.meleeDescription);
+		archeryName = getResources().getStringArray(R.array.archeryName);
+		archeryPrice = getResources().getStringArray(R.array.archeryPrice);
+		archeryDescription = getResources().getStringArray(R.array.archeryDescription);
+		// Groups in expandable list
 		Group handguns = new Group("Handguns");
 		Group assault = new Group("Assault");
 		Group shotguns = new Group("Shotguns");
 		Group melee = new Group("Melee");
-		Group accessories = new Group("Accessories");
+		Group archery = new Group("Archery");
 		
 		for(int i=0; i<handgunName.length; i++)
 		{
@@ -136,13 +133,28 @@ public class MainActivity extends Activity implements View.OnClickListener
 			Product e2 = new Product(assaultName[i], assaultDescription[i], Double.parseDouble(assaultPrice[i]));
 			assault.children.add(e2);
 		}
+		for(int i=0; i<shotgunName.length; i++)
+		{
+			Product e3 = new Product(shotgunName[i], shotgunDescription[i], Double.parseDouble(shotgunPrice[i]));
+			shotguns.children.add(e3);
+		}
+		for(int i=0; i<meleeName.length; i++)
+		{
+			Product e4 = new Product(meleeName[i], meleeDescription[i], Double.parseDouble(meleePrice[i]));
+			melee.children.add(e4);
+		}
+		for(int i=0; i<archeryName.length; i++)
+		{
+			Product e5 = new Product(archeryName[i], archeryDescription[i], Double.parseDouble(archeryPrice[i]));
+			archery.children.add(e5);
+		}
 		
-	 
 		groups.append(0, handguns);
 		groups.append(1, assault);
 		groups.append(2, shotguns);
 		groups.append(3, melee);
-		groups.append(4, accessories);
+		groups.append(4, archery);
+
 	}
 
 	@Override

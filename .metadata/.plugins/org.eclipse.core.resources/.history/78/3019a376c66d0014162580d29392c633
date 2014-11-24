@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thisIsMyMap linked="true" >
+	    <entry key="Commander .45ACP">acp45</entry>
+	    <entry key="Rossi R851">acp5</entry>
+	    <entry key="ATI .22LR">ati</entry>
+	</thisIsMyMap>

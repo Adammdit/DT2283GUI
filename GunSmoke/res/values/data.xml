@@ -3,7 +3,7 @@
     <string-array name="handgunName">
         <item>Commander .45ACP</item>
         <item>Rossi R851</item>
-        <item>ATI GSG .22LR</item>
+        <item>ATI .22LR</item>
         <item>Charter 38SPL</item>
         <item>PANTERA .45ACP</item>
         <item>Armscor 38SPL</item>
@@ -21,6 +21,30 @@
      	<item>1927 M1 45</item>
      	<item>Barrett .50BMG</item>
     </string-array> 
+    <string-array name="shotgunName">
+        <item>Akkar MC3</item>
+        <item>Beretta A400</item>
+        <item>KOFS SX</item>
+        <item>ADT SW</item>
+        <item>ADT VENOM</item>
+        <item>Taylors</item>
+    </string-array>
+    <string-array name="meleeName">
+        <item>Boker</item>
+        <item>Browning</item>
+        <item>Kukri</item>
+        <item>Machete</item>
+        <item>Katana</item>
+        <item>Bastard</item>
+    </string-array>
+    <string-array name="archeryName">
+        <item>Inferno</item>
+        <item>Barnett</item>
+        <item>Vortex</item>
+        <item>Diamond</item>
+        <item>Brodhead</item>
+        <item>Apex Sight</item>
+    </string-array>
     
     <string-array name="handgunPrice">
         <item>431.65</item>
@@ -42,7 +66,31 @@
 		<item>1938.41</item>
 		<item>962.56</item>
 		<item>8633.00</item>
+    </string-array>
+    <string-array name="shotgunPrice">
+        <item>444.28</item>
+        <item>1618.00</item> 
+        <item>457.00</item>
+        <item>496.02</item>
+        <item>461.07</item>
+        <item>1041.01</item>
     </string-array> 
+    <string-array name="meleePrice">
+        <item>40.81</item>
+        <item>26.37</item>
+        <item>156.79</item>
+        <item>31.45</item>
+        <item>491.56</item>
+        <item>179.17</item>
+    </string-array>
+    <string-array name="archeryPrice">
+        <item>489.09</item>
+        <item>999.00</item>
+        <item>126.17</item>
+        <item>357.66</item>
+        <item>18.80</item>
+        <item>74.84</item>
+    </string-array>
     
     <string-array name="handgunDescription">
         <item>American Classic 1911, Commander, 45ACP, 4.25" Barrel, Blue Finish, Plastic Grips, 3 Dot Sights, 8Rd, 1 Magazine ACC45B</item>
@@ -65,4 +113,30 @@
     	<item>Auto Ordnance 1927M1, Semi-automatic, 45ACP, 16.5" Barrel, Black Finish, Walnut Stock, Fixed Sights, 30Rd, 1 Magazine TM1</item>
     	<item>Barrett 82CQ, Semi-automatic, 50BMG, 20.6" Barrel, Black Finish, Synthetic Stock, 10Rd, Carry Case and Cleaning Kit, 1 Magazine 13318</item>
     </string-array> 
+    <string-array name="shotgunDescription">
+        <item>Model 600 Standard Semi Automatic features include: 12, 20 and 28 gauge, black synthetic, full camo and walnut versions. Receiver is light weight aircraft grade aluminum alloy. Vent rib with brass bead, chrome-moly steel barrel with hard chromed bores, steel shot compatible. Choke: MC-3. Flush mount choke tube.</item>
+		<item>Eats every type of ammo, fast swinging, gas cycling. Clean with a rag, all components are tight. Recoil reduction is highly noted.</item>    
+    	<item>4140 chrome moly steel barrel, chrome plated inside and outside, 5 interchangeable chokes C,IC,M,IM,F Single selective trigger, Turkish walnut stock - oil finished, Brass front bead sight</item>
+    	<item>Pre configured magazine-fed shotgun system Faster reloads Durable polymer construction Reliable feeding Ambidextrous design Adjustable stock 10 round detachable drum magazine</item>
+    	<item>•Pre-configured magazine-fed shotgun system •Faster reloads •Durable polymer construction •Reliable feeding •Ambidextrous design •Pistol grip •5 round detachable box magazine</item>
+    	<item>•Replication of the 1887 Levr Action Shotgun already known for speed and reliability in Cowboy Action competition and a traditional favorite in the field •Features 5-shell magazine plus one in chamber •Matte black finish •Wood forearm and pistol grip •OAL: 27.5" •Wt.: 6.6 lbs.</item>
+    </string-array> 
+    <string-array name="meleeDescription">
+        <item>Boker USA 02BO288 BOKER PLUS FITZ STAG</item>
+        <item>Browning 322870</item>
+        <item>Cold Steel Kukri</item>
+        <item>1050 steel blade features distinctive bulge that adds heft to fore-blade for additional chopping power, Popular tool in Southeast Asia, Full tang construction, Ergonomic Gator Grip handle, Includes: lanyard, nylon sheath w/belt loop D-ring for easy carrying, Blade Length: 15.5” OAL: 22.5” Wt.: 20.8 oz. (without sheath)</item>
+        <item>CAS Hanwei and Thunder Katana</item>
+        <item>CAS Hanwei Bastard Sword</item>
+    </string-array>
+    <string-array name="archeryDescription">
+        <item>Arrow Precision INFERNo Firestorm Crossbow.</item>
+        <item>"Ghost 400 CRT Description Meet the Ghost with CRT (Carbon Riser Technology) by Barnett. Another pioneering first, Barnett has the only patent protected, ultralight, super strong Carbon riser available for Crossbows. The CRT Riser boasts an incredible 5 to 1 safety factor. Shooting scary fast arrow speeds, the Ghost also comes complete with Barnett's AVI technology molded over laminated limbs which reduces noise and vibration up to 30%. The Aluminum flight track, CROSSWIRE Strings, and Whiplash Cams also provides a smoother, faster, quieter, and more precise shot in a compact fit. With the ADF (Anti-Dry Fire) MIM (Metal Injection Molding) trigger system and 400 FPS speed the Ghost CRT is the crossbow to own! Made in the USA Specifications: - Draw Weight: 185 lbs - 151 FT. lbs of Energy - 15.75"" Power Stroke - 400 FPS Dimensions: - 7.8 lbs Weight - 38"" Length - 24"" Width - 22"" Arrow Length Kit includes: - 4 Game Crusher Custom Carbon Bolts - 4 Field Points - Rope Cocking Device - Apex 4 Bolt Quiver - Comfort Grip Crossbow Sling - Premium Paper-Sighted illuminated scope(mounts/rings included also)" </item>      
+		<item>Versatile bow will grow w/young archer, Let off: 60 to 70% Adjustable draw modules included for quick and easy change w/out use of bow press, Includes: Quiver; (3) Arrows; Fiber optic sights; Rest, Draw: 18"-23" Wt.: 25 to 45, Right hand, Camo finish</item>
+        <item>"This is a great youth bow that can take you from grade school into adulthood. With just a simple Allen wrench, this one bow can easily adjust from 30# Draw Weight and 19"" Draw Length all the way up to 60# Draw Weight and 29"" Draw Length. Use the bow as a basic trainer for beginners. Or crank it up for serious deer and elk hunting. Set the draw length down to fit shooters just 48"" tall, or adjust it to fit virtually anyone in the family. Crank the Razor Edge out to 29"" and 60# draw weight, and it pumps out a jaw-dropping 308 fps IBO Speed. And with its forgiving 7"" brace height, full 75% let-off cams, aluminum riser, and parallel limbs, the Razor Edge is a great pick as a primary hunting bow too. This bow comes strung. Includes sight, rest, and quiver. Some assembly required." </item>
+        <item>1-3/16" cutting diameter   •.Razor sharp chisel tip  •.031” stainless steel blade thickness</item>
+        <item>Apex Gear ATOMIC ROVER 1PIN .019 Light</item>
+    </string-array>
 </resources>
+
+

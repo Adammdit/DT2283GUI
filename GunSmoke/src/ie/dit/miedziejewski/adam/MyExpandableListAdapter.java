@@ -1,11 +1,7 @@
 package ie.dit.miedziejewski.adam;
 
 import java.text.DecimalFormat;
-
 import android.app.Activity;
-import android.graphics.Color;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,16 +16,22 @@ import android.widget.Toast;
 
 public class MyExpandableListAdapter extends BaseExpandableListAdapter 
 {
+	String[] handgunName;
+	// hashmap used to store gun names with associated names of the pictures
+
 	private final SparseArray<Group> groups;
 	public LayoutInflater inflater;
 	public Activity activity;
-
+	// Reference: The following code is from 
+	// http://www.androidhive.info/2013/07/android-expandable-list-view-tutorial/
 	public MyExpandableListAdapter(Activity act, SparseArray<Group> groups) 
 	{
 		activity = act;
 		this.groups = groups;
 		inflater = act.getLayoutInflater();
+		
 	}
+
 
 	@Override
 	public Object getChild(int groupPosition, int childPosition) 
@@ -62,12 +64,8 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 			
 			//attach the TextWatcher listener to the EditText
 		    quantity.addTextChangedListener(new MyTextWatcher(rowView));
-		    
-		    if(childPosition % 2 == 0)
-		    {
-		    	rowView.setBackgroundColor(Color.rgb(51, 51, 0));
-		    }
 		}
+		
 
 		EditText quantity = (EditText) rowView.findViewById(R.id.qty);
 		quantity.setTag(children);
@@ -100,7 +98,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 		}	
 		
 		ImageView imageView = (ImageView)rowView.findViewById(R.id.weaponeImage);
-    
+		
 		rowView.setOnClickListener(new OnClickListener() 
 		{
 			@Override
@@ -110,79 +108,82 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter
 				Toast.LENGTH_SHORT).show();
 			}
 		});
-
-		if (name.getText().equals("Commander .45ACP"))
-		{	
-			imageView.setImageResource(R.drawable.acp45);
-		}
-		else if (name.getText().equals("Rossi R851"))
-		{
-			imageView.setImageResource(R.drawable.acp5);
-		}
-		else if (name.getText().equals("ATI GSG .22LR"))
-		{
-			imageView.setImageResource(R.drawable.ati);
-		}
-		else if (name.getText().equals("Charter 38SPL"))
-		{
-			imageView.setImageResource(R.drawable.charter);
-		}
-		else if (name.getText().equals("PANTERA .45ACP"))
-		{
-			imageView.setImageResource(R.drawable.pantera);
-		}
-		else if (name.getText().equals("Armscor 38SPL"))
-		{
-			imageView.setImageResource(R.drawable.spl38);
-		}
-		else if (name.getText().equals("Taurus 357MAG"))
-		{
-			imageView.setImageResource(R.drawable.taurus);
-		}
-		else if (name.getText().equals("Adams 5.56"))
-		{
-			imageView.setImageResource(R.drawable.adams);
-		}
-		else if (name.getText().equals("Adcor E 223"))
-		{
-			imageView.setImageResource(R.drawable.adcor);
-		}
-		else if (name.getText().equals("ATI GSG .22LR"))
-		{
-			imageView.setImageResource(R.drawable.atigsg);
-		}
-		else if (name.getText().equals("Anderson M4 5.56"))
-		{
-			imageView.setImageResource(R.drawable.anderson);
-		}
-		else if (name.getText().equals("Armalite 223"))
-		{
-			imageView.setImageResource(R.drawable.armalite);
-		}
-		else if (name.getText().equals("Armalite 7.62"))
-		{
-			imageView.setImageResource(R.drawable.armlite2);
-		}
-		else if (name.getText().equals("Armalite .50"))
-		{
-			imageView.setImageResource(R.drawable.armlite3);
-		}
-		else if (name.getText().equals("Arsenal SAM-7"))
-		{
-			imageView.setImageResource(R.drawable.arsenal);
-		}
-		else if (name.getText().equals("1927 M1 45"))
-		{
-			imageView.setImageResource(R.drawable.m1927);
-		}
-		else if (name.getText().equals("Barrett .50BMG"))
-		{
-			imageView.setImageResource(R.drawable.barrett);
-		}
-		else{}
+		
+		
+		if (name.getText().equals("Commander .45ACP")) {	
+			imageView.setImageResource(R.drawable.acp45);}
+		else if (name.getText().equals("Rossi R851")) {
+			imageView.setImageResource(R.drawable.acp5);}
+		else if (name.getText().equals("ATI .22LR")) {
+			imageView.setImageResource(R.drawable.ati);}
+		else if (name.getText().equals("Charter 38SPL")) {
+			imageView.setImageResource(R.drawable.charter);}
+		else if (name.getText().equals("PANTERA .45ACP")) {
+			imageView.setImageResource(R.drawable.pantera);}
+		else if (name.getText().equals("Armscor 38SPL")) {
+			imageView.setImageResource(R.drawable.spl38);}
+		else if (name.getText().equals("Taurus 357MAG")) {
+			imageView.setImageResource(R.drawable.taurus);}
+		else if (name.getText().equals("Adams 5.56")) {
+			imageView.setImageResource(R.drawable.adams);}
+		else if (name.getText().equals("Adcor E 223")) {
+			imageView.setImageResource(R.drawable.adcor);}
+		else if (name.getText().equals("ATI GSG .22LR")) {
+			imageView.setImageResource(R.drawable.atigsg);}
+		else if (name.getText().equals("Anderson M4 5.56")) {
+			imageView.setImageResource(R.drawable.anderson);}
+		else if (name.getText().equals("Armalite 223")) {
+			imageView.setImageResource(R.drawable.armalite);}
+		else if (name.getText().equals("Armalite 7.62")) {
+			imageView.setImageResource(R.drawable.armlite2);}
+		else if (name.getText().equals("Armalite .50")) {
+			imageView.setImageResource(R.drawable.armlite3);}
+		else if (name.getText().equals("Arsenal SAM-7")) {
+			imageView.setImageResource(R.drawable.arsenal);}
+		else if (name.getText().equals("1927 M1 45")) {
+			imageView.setImageResource(R.drawable.m1927);}
+		else if (name.getText().equals("Barrett .50BMG")) {
+			imageView.setImageResource(R.drawable.barrett);}
+		else if (name.getText().equals("Akkar MC3")) {
+			imageView.setImageResource(R.drawable.akkar);}
+		else if (name.getText().equals("Beretta A400")) {
+			imageView.setImageResource(R.drawable.beretta);}
+		else if (name.getText().equals("KOFS SX")) {
+			imageView.setImageResource(R.drawable.kofs);}
+		else if (name.getText().equals("ADT SW")) {
+			imageView.setImageResource(R.drawable.adt);}
+		else if (name.getText().equals("ADT VENOM")) {
+			imageView.setImageResource(R.drawable.adtv);}
+		else if (name.getText().equals("Taylors")) {
+			imageView.setImageResource(R.drawable.taylors);}
+		else if (name.getText().equals("Boker")) {
+			imageView.setImageResource(R.drawable.boker);}
+		else if (name.getText().equals("Browning")) {
+			imageView.setImageResource(R.drawable.browning);}
+		else if (name.getText().equals("Kukri")) {
+			imageView.setImageResource(R.drawable.kukri);}
+		else if (name.getText().equals("Machete")) {
+			imageView.setImageResource(R.drawable.machete);}
+		else if (name.getText().equals("Katana")) {
+			imageView.setImageResource(R.drawable.katana);}
+		else if (name.getText().equals("Bastard")) {
+			imageView.setImageResource(R.drawable.bastard);}
+		else if (name.getText().equals("Inferno")) {
+			imageView.setImageResource(R.drawable.inferno);}
+		else if (name.getText().equals("Barnett")) {
+			imageView.setImageResource(R.drawable.barnett);}
+		else if (name.getText().equals("Vortex")) {
+			imageView.setImageResource(R.drawable.vortex);}
+		else if (name.getText().equals("Diamond")) {
+			imageView.setImageResource(R.drawable.diamond);}
+		else if (name.getText().equals("Brodhead")) {
+			imageView.setImageResource(R.drawable.allen);}
+		else if (name.getText().equals("Apex Sight")) {
+			imageView.setImageResource(R.drawable.apex);}
+		else{} 
 		return rowView;
 	}
-
+	// Reference complete
 	@Override
 	public int getChildrenCount(int groupPosition) 
 	{

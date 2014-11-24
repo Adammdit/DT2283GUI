@@ -1,6 +1,5 @@
 package ie.dit.miedziejewski.adam;
 
-
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -47,22 +46,21 @@ public class Product implements Parcelable
 		this.quantity = quantity;
 	}
 	public Double getExt() {
-		return ext;
+		return (double) Math.round(price*quantity*100)/100;
 	}
 	public void setExt(Double ext) {
 		this.ext = ext;
 	}
-
+	
+	
 	@Override
 	public int describeContents() {return 0;}
 
-	// Parcelling part
+	// Parcel part
 	// http://stackoverflow.com/questions/7181526/how-can-i-make-my-custom-objects-be-parcelable
     public Product(Parcel in)
     {
-        this.name = in.readString();
-        this.quantity = in.readInt();
-        this.price = in.readDouble();
+    	readFromParcel(in);
     }
 	
 	@Override
@@ -73,6 +71,16 @@ public class Product implements Parcelable
 	    dest.writeInt(quantity);
 	}
 	
+	private void readFromParcel(Parcel in) 
+	{   
+		// We just need to read back each 
+		// field in the order that it was 
+		// written to the parcel 
+		name = in.readString(); 
+		price = in.readDouble(); 
+		quantity = in.readInt(); 
+	} 
+	
 	public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
         public Product createFromParcel(Parcel in) {
             return new Product(in); 
@@ -81,5 +89,5 @@ public class Product implements Parcelable
         public Product[] newArray(int size) {
             return new Product[size];
         }
-    };
+    }; 
 }

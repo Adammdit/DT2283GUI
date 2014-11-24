@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="handgunName">
+        <item>Commander .45ACP</item>
+        <item>Rossi R851</item>
+        <item>ATI .22LR</item>
+        <item>Charter 38SPL</item>
+        <item>PANTERA .45ACP</item>
+        <item>Armscor 38SPL</item>
+        <item>Taurus 357MAG</item>       
+    </string-array> 
+    <string-array name="assaultName">
+        <item>Adams 5.56</item>
+     	<item>Adcor E 223</item>
+     	<item>ATI GSG .22LR</item>
+     	<item>Anderson M4 5.56</item>
+     	<item>Armalite 223</item>
+     	<item>Armalite 7.62</item>
+     	<item>Armalite .50</item>
+     	<item>Arsenal SAM-7</item>
+     	<item>1927 M1 45</item>
+     	<item>Barrett .50BMG</item>
+    </string-array> 
+    <string-array name="shotgunName">
+        <item>Akkar MC3</item>
+        <item>Beretta A400</item>
+        <item>KOFS SX</item>
+        <item>ADT SW</item>
+        <item>ADT VENOM</item>
+        <item>Taylors</item>
+    </string-array>
+    <string-array name="meleeName">
+        <item>Boker</item>
+        <item>Browning</item>
+        <item>Kukri</item>
+        <item>Machete</item>
+        <item>Katana</item>
+        <item>Bastard</item>
+    </string-array>
+    <string-array name="archeryName">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="handgunPrice">
+        <item>431.65</item>
+        <item>592.41</item>
+        <item>342.37</item>
+        <item>360.59</item>
+        <item>1469.13</item>
+        <item>228.37</item>
+        <item>433.82</item>
+    </string-array> 
+    <string-array name="assaultPrice">
+        <item>773.55</item>
+		<item>1785.81</item>
+		<item>291.92</item>
+		<item>1147.94</item>
+		<item>899.99</item>		
+		<item>1437.91</item>
+		<item>3212.45</item>
+		<item>1938.41</item>
+		<item>962.56</item>
+		<item>8633.00</item>
+    </string-array>
+    <string-array name="shotgunPrice">
+        <item>444.28</item>
+        <item>1618.00</item> 
+        <item>457.00</item>
+        <item>496.02</item>
+        <item>461.07</item>
+        <item>1041.01</item>
+    </string-array> 
+    <string-array name="meleePrice">
+        <item>40.81</item>
+        <item>26.37</item>
+        <item>156.79</item>
+        <item>31.45</item>
+        <item>491.56</item>
+        <item>179.17</item>
+    </string-array>
+    <string-array name="archeryPrice">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="handgunDescription">
+        <item>American Classic 1911, Commander, 45ACP, 4.25" Barrel, Blue Finish, Plastic Grips, 3 Dot Sights, 8Rd, 1 Magazine ACC45B</item>
+        <item>Rossi Model R851, Small Frame Revolver, 357 Magnum, 4" Barrel, Steel Frame, Blue Finish, Rubber Grips, Fixed Sights, 6Rd R85104</item>
+        <item>GSG M1911 AD-OPS 22LR 5" SUPP FAUX SUPPRESSOR / PIC RAIL</item>
+        <item>Charter Arms Goldfinger, 38 Special, 2" Barrel, Aluminum Frame, Gold Finish, Rubber Grips, Fixed Sights, 5Rd, Ultra Lite, Fired Case 53890</item>
+        <item>SPS PANTERA 45ACP 12+1 BL CHRM BLACK CHROME FINISH</item>
+        <item>Armscor 206 Double Action, 38 Special, 2" Barrel, Alloy Frame, Blue Finish, Wood Grips, Fixed Sights, 6Rd, Right Hand 51283</item>
+        <item>Taurus Model 66, Medium Frame, 357 Magnum, 4" Barrel, Steel Frame, Blue Finish, Rubber Grips, Adjustable Sights, 7Rd 2-660041</item>
+    </string-array> 
+    <string-array name="assaultDescription">
+        <item>Adams Arms Carbine, Semi-automatic, 223 Rem/556NATO, 16" M4 Profile Barrel, Carbine Gas System, A2 Flash Hider, Black Finish, 6 Position Stock, Flat Top, 30Rd, Gas Piston RA-16-C-B-556</item>
+    	<item>Piston system for cleaner more reliable operations. Free floating barrel for improved accuracy. Dust wiper to protect upper receiver and components. Removable folding front piston sight for ease of cleaning. Ambidextrous forward placed charging/forward assist handle to help maintain target acquisition.</item>
+    	<item>GSG-522 CARB LW 22LR SYN 10+1 LIGHT WEIGHT</item>
+    	<item>Anderson Manufacturing s M4 Carbine (AM15M416) improves on a familiar and reliable military spec rifle. Similar to Anderson s Heavy Barrel Carbine, the M4 is chambered in .223/5.56mm and offering a 16-in. M4 heavy barrel, optic-ready front sight, </item>
+    	<item>Armalite 30 + 1 223 Rem./20" Black Chrome Lined Barrel/Green Synthetic Stock</item>
+    	<item>"Armalite 15SPR1CB 15A Semi-Automatic 7.62mmX39mm 16"" Adjustable Black ArmaLite's SPR Mod 1 provides all the flexibility of the Mod 1's one piece upper receiver/rail system but now for the world's most available cartridge. The original AK-47 was built to use this cartridge. ow, enthusiasts won't have to settle for less than the best: a true ArmaLite carbine.</item>
+    	<item>Armalite 50A1BL AR 50BMG Bolt 50 Browning Machine Gun (BMG) 31" 1 Alum Stk Black</item>
+    	<item>Arsenal, Inc. SAM-7 Classic Semi-automatic 762X39 16" Black Blonde Wood 1 Mag, Cleaning Rod Hammer Forged 30Rd Milled Receiver Adjustable Sights SAM7-31</item>
+    	<item>Auto Ordnance 1927M1, Semi-automatic, 45ACP, 16.5" Barrel, Black Finish, Walnut Stock, Fixed Sights, 30Rd, 1 Magazine TM1</item>
+    	<item>Barrett 82CQ, Semi-automatic, 50BMG, 20.6" Barrel, Black Finish, Synthetic Stock, 10Rd, Carry Case and Cleaning Kit, 1 Magazine 13318</item>
+    </string-array> 
+    <string-array name="shotgunDescription">
+        <item>Model 600 Standard Semi Automatic features include: 12, 20 and 28 gauge, black synthetic, full camo and walnut versions. Receiver is light weight aircraft grade aluminum alloy. Vent rib with brass bead, chrome-moly steel barrel with hard chromed bores, steel shot compatible. Choke: MC-3. Flush mount choke tube.</item>
+		<item>Eats every type of ammo, fast swinging, gas cycling. Clean with a rag, all components are tight. Recoil reduction is highly noted.</item>    
+    	<item>4140 chrome moly steel barrel, chrome plated inside and outside, 5 interchangeable chokes C,IC,M,IM,F Single selective trigger, Turkish walnut stock - oil finished, Brass front bead sight</item>
+    	<item>Pre configured magazine-fed shotgun system Faster reloads Durable polymer construction Reliable feeding Ambidextrous design Adjustable stock 10 round detachable drum magazine</item>
+    	<item>•Pre-configured magazine-fed shotgun system •Faster reloads •Durable polymer construction •Reliable feeding •Ambidextrous design •Pistol grip •5 round detachable box magazine</item>
+    	<item>•Replication of the 1887 Levr Action Shotgun already known for speed and reliability in Cowboy Action competition and a traditional favorite in the field •Features 5-shell magazine plus one in chamber •Matte black finish •Wood forearm and pistol grip •OAL: 27.5" •Wt.: 6.6 lbs.</item>
+    </string-array> 
+    <string-array name="meleeDescription">
+        <item>Boker USA 02BO288 BOKER PLUS FITZ STAG</item>
+        <item>Browning 322870</item>
+        <item>Cold Steel Kukri</item>
+        <item>1050 steel blade features distinctive bulge that adds heft to fore-blade for additional chopping power, Popular tool in Southeast Asia, Full tang construction, Ergonomic Gator Grip handle, Includes: lanyard, nylon sheath w/belt loop D-ring for easy carrying, Blade Length: 15.5” OAL: 22.5” Wt.: 20.8 oz. (without sheath)</item>
+        <item>CAS Hanwei and Thunder Katana</item>
+        <item>CAS Hanwei Bastard Sword</item>
+    </string-array>
+    <string-array name="archeryDescription">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
+
+

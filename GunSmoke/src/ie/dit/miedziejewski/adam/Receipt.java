@@ -4,20 +4,21 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.TextView.BufferType;
 import android.widget.Toast;
 
 public class Receipt extends Activity implements View.OnClickListener 
 {
-	TextView receiptName, receiptLicence, receiptGender, receiptAge, receiptEmail, receiptBudget, receiptJob;
+	TextView receiptName, receiptLicence, receiptEmail, soldItems, soldTotal;
 	Button cnf;
-	
+	Intent i;
+	String emailBody = "";
+
+	MainActivity main = new MainActivity();	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -25,63 +26,49 @@ public class Receipt extends Activity implements View.OnClickListener
 		setContentView(R.layout.activity_receipt);
 		receiptName = (TextView) findViewById(R.id.receiptName);
 		receiptLicence = (TextView) findViewById(R.id.receiptLicence);
-		receiptGender = (TextView) findViewById(R.id.receiptGender);
-		receiptAge = (TextView) findViewById(R.id.receiptAge);
 		receiptEmail = (TextView) findViewById(R.id.receiptEmail);
-		receiptBudget = (TextView) findViewById(R.id.receiptBudget);
-		receiptJob = (TextView) findViewById(R.id.receiptJob);
-		
-		//formName = getIntent().getExtras().getString("name").toString();
-		//formEmail = getIntent().getExtras().getString("email").toString();
+		soldItems = (TextView) findViewById(R.id.soldItems);
+		soldTotal = (TextView) findViewById(R.id.soldTotal);		
+		// attache button widget and listener
 		cnf = (Button)findViewById(R.id.confirm);
 		cnf.setOnClickListener(this);
-		
-		Intent i = getIntent();
-
-	    ArrayList<Product> sold = i.getParcelableArrayListExtra("productsList");
-	    
+		// get intent
+		i = getIntent();
+		// get data from intent
+	    ArrayList<Product> sold = i.getParcelableArrayListExtra("productsList");	
         receiptName.setText("Name: " + i.getStringExtra("formName"));
         receiptLicence.setText("Licence No: " + i.getStringExtra("formLicence"));
-        receiptGender.setText("Gender: " + i.getStringExtra("formGender"));
-        receiptAge.setText("Age: " + i.getStringExtra("formAge"));
-        receiptJob.setText("Job: " + i.getStringExtra("formJob"));
         receiptEmail.setText("Email: " + i.getStringExtra("formEmail"));
-        receiptBudget.setText("Budget: €" + i.getStringExtra("formBudget"));
-		
-		//receiptName.setText(formName);
+        receiptEmail.setText("TOTAL : " + i.getStringExtra("total"));
+        // Constructing email body
+        soldItems.setLineSpacing(2, 1); // UPDATE HERE		
+        soldItems.setText("List of items:\n", BufferType.EDITABLE);
+        Double preVatTotal = 0.00; 
+        for (int k=0; k < sold.size(); k++)
+        {
+        	soldItems.append(sold.get(k).getName() + " :     " + Double.toString(sold.get(k).getPrice()) + " x " + sold.get(k).getQuantity() + " = €" + sold.get(k).getExt() + "\n");
+        	emailBody = emailBody + sold.get(k).getName() + " :     " + Double.toString(sold.get(k).getPrice()) + " x " + sold.get(k).getQuantity() + " = €" + sold.get(k).getExt() + "\n";
+        	preVatTotal = preVatTotal + sold.get(k).getExt();
+        }
+        soldTotal.setText("TOTAL : €" + preVatTotal + " + VAT : €" + Math.round((preVatTotal*0.21)*100.00)/100.00 + " = €" + Math.round((preVatTotal*1.21)*100.00)/100.00);
+        emailBody = emailBody + "TOTAL : €" + Math.round((preVatTotal)*100.00)/100.00 + " + VAT : €" + Math.round((preVatTotal*0.21)*100.00)/100.00 + " = €" + Math.round((preVatTotal*1.21)*100.00)/100.00;
 	}
-	/*
-	protected void sendEmail() 
-	{
-		Intent email = new Intent(Intent.ACTION_SEND);
-        email.putExtra(Intent.EXTRA_EMAIL, new String[] { "adam.miedziejewski@mydit.ie" });
-        // email.putExtra(Intent.EXTRA_CC, new String[]{ to});
-        // email.putExtra(Intent.EXTRA_BCC, new String[]{to});
-        email.putExtra(Intent.EXTRA_SUBJECT, "subject");
-        email.putExtra(Intent.EXTRA_TEXT, "message");
-
-        // need this to prompts email client only
-        email.setType("message/rfc822");
-
-        //startActivity(Intent.createChooser(email, "Choose an Email client :"));
-	} */
-	
+	// if button clicked send an email
+	// Reference: The following code is from 
+	// http://stackoverflow.com/questions/2197741/how-can-i-send-emails-from-my-android-application
 	@Override
 	public void onClick(View v) 
 	{
-		//sendEmail();
-		/*
-		Intent i = new Intent(Intent.ACTION_SEND);
-		i.setType("message/rfc822");
-		i.putExtra(Intent.EXTRA_EMAIL  , new String[]{formEmail});
-		i.putExtra(Intent.EXTRA_SUBJECT, "subject of email");
-		i.putExtra(Intent.EXTRA_TEXT   , "body of email");
+		Intent i2 = new Intent(Intent.ACTION_SEND);
+		i2.setType("message/rfc822");
+		i2.putExtra(Intent.EXTRA_EMAIL  , new String[]{i.getStringExtra("formEmail")});
+		i2.putExtra(Intent.EXTRA_SUBJECT, "Receipt:");
+		i2.putExtra(Intent.EXTRA_TEXT   , emailBody);
 		try {
-		    startActivity(Intent.createChooser(i, "Send mail..."));
+		    startActivity(Intent.createChooser(i2, "Send mail..."));
 		} catch (android.content.ActivityNotFoundException ex) {
 		    Toast.makeText(Receipt.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+		}	
 	}
-		*/
-		
-	}
+	// Reference complete
 }

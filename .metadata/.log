@@ -9993,3 +9993,1598 @@ Binding(CTRL+SHIFT+\,
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 10:22:40.634
 !MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+!SESSION 2014-11-10 12:42:06.283 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@412ec087,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@70ec9e80,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6462007f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@55d682fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5e0ec555,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@25f67cc4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1bbd7fb1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@592f742,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@360a4bb1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2c18f8fc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5def6d2e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2fe3ad19,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@11e91730,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2acdf17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5df1597f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@102ad108,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.463
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6b016c82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@620c383d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.464
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2a7b01b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@10555cfa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.464
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@71abdf99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@487ed6f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.464
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4ae4f01c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@20e39570,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-10 12:47:57.464
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7c4fe4ad,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6c11732,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:41:06.647
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:42:42.522
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:43:45.015
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:45:44.078
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:47:58.230
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:49:22.190
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY org.eclipse.ui 2 2 2014-11-10 19:49:47.513
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:53:45.061
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 19:57:50.015
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:02:21.107
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:02:36.493
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:18:06.621
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:18:37.503
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:19:23.147
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:19:39.621
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:27:15.416
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:28:29.010
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:28:36.374
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:28:41.559
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:28:46.819
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:29:08.805
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:29:43.519
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:33:10.146
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:45:03.465
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 20:58:23.911
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:05:23.918
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:05:43.005
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:09:03.667
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:11:40.158
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:14:19.084
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:14:38.773
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:15:55.163
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:20:48.625
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:25:15.859
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:30:00.367
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 21:30:39.434
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:27:24.882
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:33:18.331
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:34:30.022
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:36:16.994
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:36:45.513
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:42:45.668
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 22:45:05.052
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:06:38.754
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:07:48.551
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:09:31.910
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:10:49.781
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:13:32.608
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:27:05.813
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:27:57.495
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:28:09.443
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:35:38.782
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:36:01.071
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:44:04.290
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-10 23:51:24.862
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:00:04.985
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:05:06.734
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:06:52.533
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:08:40.003
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:08:50.658
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:12:59.572
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:13:53.402
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:20:53.669
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:21:57.139
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:24:53.386
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:32:17.107
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:33:44.549
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:40:17.276
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:40:54.955
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:41:03.860
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-11 00:42:00.922
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-11 10:31:22.238 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY org.eclipse.ui 2 2 2014-11-11 10:53:20.202
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2014-11-15 23:52:07.258 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-11-15 23:52:28.737
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 0 2014-11-15 23:53:33.738
+!MESSAGE While loading class "org.eclipse.cdt.internal.ui.text.ICReconcilingListener", thread "Thread[main,6,main]" timed out waiting (5004ms) for thread "Thread[Worker-3,5,main]" to finish starting bundle "org.eclipse.cdt.ui_5.3.2.201202111925 [64]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "org.eclipse.cdt.internal.ui.text.ICReconcilingListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.cdt.ui_5.3.2.201202111925.jar" by thread "Worker-3".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.defineClass(DefaultClassLoader.java:188)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClassHoldingLock(ClasspathManager.java:632)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:607)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:568)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:492)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:465)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.cdt.codan.internal.ui.cxx.Startup$1$1.<init>(Startup.java:47)
+	at org.eclipse.cdt.codan.internal.ui.cxx.Startup$1.run(Startup.java:46)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3537)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3189)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 57 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.defineClass(DefaultClassLoader.java:188)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClassHoldingLock(ClasspathManager.java:632)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:607)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:568)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:492)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:465)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.cdt.codan.internal.ui.cxx.Startup$1$1.<init>(Startup.java:47)
+	at org.eclipse.cdt.codan.internal.ui.cxx.Startup$1.run(Startup.java:46)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3537)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3189)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:01:55.605
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY org.eclipse.ui 2 2 2014-11-16 00:02:01.508
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:04:32.946
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+!SESSION 2014-11-16 00:06:55.525 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:09:05.585
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY org.eclipse.ui 2 2 2014-11-16 00:09:08.362
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:11:33.732
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:12:21.683
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:13:47.658
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:15:09.886
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:16:11.027
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:16:29.186
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 00:18:24.971
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+!SESSION 2014-11-16 17:46:24.817 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5e2fcbd3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2089af17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13eeb9f4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7904e8c4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1df24c65,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7b47e585,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e758a3f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4dcc66d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@46c73583,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2461ae9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@408a4fc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5dbe1708,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@387a6aa8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3774ef26,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6cf0588f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17464c29,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@83223af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2a114d6c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.204
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13c4ba5d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4430e735,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.204
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@58a739ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aa63276,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.204
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4ac430da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a4d75b2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-16 18:07:19.204
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16635e8f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@791169e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 18:15:30.459
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 18:22:36.880
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 18:53:40.933
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 18:58:42.418
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY org.eclipse.ui 2 2 2014-11-16 19:08:36.626
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 19:26:56.428
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 19:28:10.239
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 19:32:59.652
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:12:57.079
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:15:31.937
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:22:11.816
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:23:24.656
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:28:41.373
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:32:24.031
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:38:42.932
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:43:03.784
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:43:22.547
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:49:59.590
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 20:54:30.264
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:00:13.753
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:04:02.436
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:08:22.785
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:15:32.440
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:16:03.771
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:22:19.299
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:24:04.640
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:30:00.651
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:33:42.446
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:37:37.140
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:40:51.171
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:42:23.918
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:42:55.391
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:45:07.784
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 21:55:13.450
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:01:10.262
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:02:18.191
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:03:01.950
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:05:30.640
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:09:25.555
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-16 22:11:39.511
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 13:47:40.037
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 13:51:15.569
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 13:52:41.179
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 13:53:45.696
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 14:07:49.514
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-17 14:13:19.040
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+!SESSION 2014-11-24 12:22:38.318 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IE
+Framework arguments:  -product com.android.ide.eclipse.adt.package.adtproduct
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.adtproduct
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:28:19.893
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY org.eclipse.ui 2 2 2014-11-24 12:28:26.607
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.jface 2 0 2014-11-24 12:31:02.680
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2391cad6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@f6d4253,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@389bb9d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2089af17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@77c630f0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2a114d6c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@74b719fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4430e735,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@210bae8f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a4d75b2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5f13f3c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3b3596d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@216e7f30,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@791169e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5d603975,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@585c6037,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@18b0e833,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7f0e8369,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@65c78ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2f5a23be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2107962c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3774ef26,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.682
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@791433a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4dcc66d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-24 12:31:02.682
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1d4a9216,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@119d9bf2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:37:29.813
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:43:54.261
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:48:10.837
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:52:34.977
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:53:01.616
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:53:22.623
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 12:57:38.484
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:02:14.684
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:04:06.831
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:09:52.780
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:10:25.427
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:13:07.028
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:17:51.675
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:21:45.511
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:23:20.775
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:25:21.632
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:25:40.060
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:29:03.148
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:31:35.934
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:32:08.156
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:32:56.433
+!MESSAGE No command output when running: 'am start -n ie.dit.miedziejewski.adam/ie.dit.miedziejewski.adam.SplashScreen -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device SH25ETV06562
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:609)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1293)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1305)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1277)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:913)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:755)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:647)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:330)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:246)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:42:07.925
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:44:39.830
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:50:44.185
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:51:05.386
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:55:23.223
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 13:56:29.247
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:05:53.383
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:08:18.987
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:10:54.474
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:13:12.202
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:13:48.406
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:15:07.735
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:15:31.884
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:20:10.638
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:22:56.335
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:23:35.406
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:24:17.282
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 14:51:37.886
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-11-24 15:40:15.286
+!MESSAGE Can't find file /home/adamm/Dropbox/DIT/Year3/SEMESTERI/GUI/Workplace/appcompat_v7/.classpath in workspace
